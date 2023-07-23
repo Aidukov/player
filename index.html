@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="niz">
+            <marquee id="nowPlaying" behavior="scroll" direction="left" scrollamount="3">Назва пісні</marquee>
+            <div class="progress">
+              <span id="currentTime">00:00</span>
+              <input type="range" id="progressBar" min="0" max="100" step="0.1" value="0">
+              <span id="duration">00:00</span>
+            </div>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+            <span id="volumeDisplay">100%</span>
+          </div>
+        
+        <div class="container">
+
+        </div>
+        <div class="buttons">
+            <div class="buttons1">
+            <img id="back" src="img/Button1.svg" alt="">
+            <img id="prev" src="./img/knopka2.svg" alt="">
+            <img id="play" src="./img/knopka3.svg" alt="">
+            <img id="pause" src="./img/knopka-pause.svg" alt="">
+            <img id="next" src="./img/knopka4.svg" alt="">
+            <img id="go" src="./img/knopka5.svg" alt="">
+            </div>
+            <div class="buttons2">
+            <button class="btns" id="search">Search</button>
+            <button class="btns" id="add" onclick="saveAndAddToPlaylist()">Add Playlist</button>
+            <button class="btns" id="save">Зберегти плейліст</button>
+            <input type="file" id="fileInput" style="display:none;">
+            <button class="btns" id="change">Change Theme</button>
+            
+            </div> 
+        </div>
+    </div>
+
+        <script src="player.js"></script>
+        <script src="change.js"></script>
+</body>
+</html>
